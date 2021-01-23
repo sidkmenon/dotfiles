@@ -1,4 +1,4 @@
 Dotfiles
 =================
 
-My dotfiles with [Dotbot][dotbot].
+My dotfiles with [Dotbot](https://github.com/anishathalye/dotbot).
