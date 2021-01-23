@@ -1,0 +1,9 @@
+[user]
+	name = Sidharth Menon
+	email = menon.sid.k@gmail.com
+[commit]
+	template = .gitmsg.txt
+[core]
+	excludesfile = .gitignore_global
+[alias]
+	dag = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset'

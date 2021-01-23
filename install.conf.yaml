@@ -1,3 +1,14 @@
-- clean: []
-- link: {}
-- shell: []
+- defaults:
+    link:
+        create: true
+        relink: true
+- clean: ['~']
+- link:
+    ~/.doom.d:
+    ~/.vim:
+    ~/.gitconfig:
+    ~/.zshrc:
+- create:
+    - ~/workspace
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
