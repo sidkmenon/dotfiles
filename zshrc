@@ -117,6 +117,15 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="/Applications/MacPorts/Emacs.app/Contents/MacOS:$PATH"
-export PATH=”$HOME/.emacs.d/bin:$PATH”
-export JAVA_HOME=$(/usr/libexec/java_home)
-eval "$(pyenv init -)"
+export PATH=$PATH:~/.emacs.d/bin
+
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$PATH:/Users/sidharthmenon/workspace/arc_tools/arcanist/bin/"
