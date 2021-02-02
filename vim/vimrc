@@ -3,3 +3,4 @@ set ignorecase
 set incsearch
 set number relativenumber
 set noswapfile
+syntax on
